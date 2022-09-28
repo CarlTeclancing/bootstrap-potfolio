@@ -10,6 +10,7 @@
     <style>
         body{
             width: 100%;
+            scroll-behavior: smooth;
         }
         .con{
             width: 100%;
@@ -25,6 +26,9 @@
             height: auto;
             margin: 20px;
             margin: 20px;
+        }
+        .con-3{
+            margin-top: 300px;
         }
 
         .icons{
@@ -73,21 +77,21 @@
         <h1 class="">CODEwithCREST</h1>
         <ul class="nav nav-pills nav-fill d-flex flex-row justify-content-between container">
             <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="#">About</a>
+              <a class="nav-link " aria-current="page" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">History</a>
+              <a class="nav-link" href="#history">History</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">contact</a>
+              <a class="nav-link" href="#contact">contact</a>
             </li>
           </ul>
     </header>
     <!---thisis the about section-->
-    <div class="con-1 d-flex flex-column justify-content-center align-items-center pt-4 rounded-5 ">
+    <div id="about" class="con-1 d-flex flex-column justify-content-center align-items-center pt-4 rounded-5 ">
         <div class="con-2 d-flex  justify-content-around   align-items-center flex-wrap rounded-5 bg-dark p-5 ">
             <div class="content text-white">
                 <span class="bg-info p-2 mt-2 rounded-3">hello I Am</span>
@@ -114,7 +118,12 @@
         </div>
     </div>
     <!--image corosel-->
-    <div class="con-3 d-flex flex-column justify-content-center align-items-center pt-4 rounded-5">
+
+    
+    <div id="projects" class="con-3 d-flex flex-column justify-content-center align-items-center pt-4 rounded-5">
+            <h1>PROJECTS</h1>
+
+
         <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -124,6 +133,13 @@
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="10000">
                 <img src="./img/counterapp.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./img/dig.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>First slide label</h5>
                   <p>Some representative placeholder content for the first slide.</p>
